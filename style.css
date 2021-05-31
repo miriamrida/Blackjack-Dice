@@ -1,0 +1,168 @@
+/*All of the code here is the designs and styles I applied to the majority of the elements in my game. I experimented with colour, positioning, borders, etc.*/
+table.play1{ 
+  border:#121dc2 5px solid;
+  float:left;
+  position: relative;
+}
+table.play2{
+  border:#e53935 5px solid;
+  float:right;
+  position: relative;
+}
+
+h1 { 
+  grid-area: header; 
+  font-size: 100px;
+  border: red 15px double;
+  background-color: black;
+  color: white;
+  text-shadow: 6px 6px rgba(27, 155, 27, 0.493);
+  text-align: center;
+  font-family: 'Bangers', cursive;
+  margin: auto;
+}
+.player1 { 
+  grid-area: Player1; 
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  color: rgb(12, 121, 12);
+  float: left;
+}
+.player2 { 
+  grid-area: Player2;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  color: rgb(12, 121, 12); 
+  float: right;
+}
+
+.dice { 
+  grid-area: dice2; 
+  width: 32px;
+  font-size: 40px;
+  padding: 50px;
+  margin: 10px;
+  float: left;
+  background-image: radial-gradient(#212121 20%, #121dc2 20%);
+  height: 100px;
+  width: 100px;
+  font-family: 'Orelega One', cursive;
+  border: black solid 5px;
+}
+.dice2 { 
+  grid-area: dice3; 
+  width: 32px;
+  font-size: 40px;
+  padding: 50px;
+  margin: 10px;
+  float:right;
+  background-image: radial-gradient(#212121 20%, #e53935 20%);
+  height: 100px;
+  width: 100px;
+  font-family: 'Orelega One', cursive;
+  border: black solid 5px;
+}
+.score{
+  border:#121dc2 1px solid;
+  display: inline;
+  position: absolute;
+  left: 15%;
+  top: 25%;
+  font-family: 'Orelega One', cursive;
+  color:#121dc2;
+  width: 20px;
+  height: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+.score2{
+  border:#e53935 2px solid;
+  display: inline;
+  position: absolute;
+  right: 15%;
+  top: 25%;
+  font-family: 'Orelega One', cursive;
+  color: #e53935;
+  width: 20px;
+  height: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+.roll1{
+  border: black solid 2px;
+  border-radius: 100px 100px 100px 100px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(12, 121, 12);
+  position: absolute;
+  right: 90%;
+  top: 70%;
+  color: black;
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+}
+.roll2{
+  border: black solid 2px;
+  border-radius: 100px 100px 100px 100px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(12, 121, 12);
+  position: absolute;
+  left: 80%;
+  top: 70%;
+  color: black;
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+}
+.nextRound{
+  border: black double 2px;
+  border-radius: 100px 100px 100px 100px;
+  color: black;
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(12, 121, 12);
+  left: 46%;
+  top: 25%;
+}
+.onedice1{
+  border: black solid 2px;
+  border-radius: 100px 100px 100px 100px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(12, 121, 12);
+  position: absolute;
+  right: 80%;
+  top: 70%;
+  color: black;
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+}
+.onedice2{
+  border: black solid 2px;
+  border-radius: 100px 100px 100px 100px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(12, 121, 12);
+  position: absolute;
+  left: 90%;
+  top: 70%;
+  color: black;
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+}
+.switchPlayer{
+  border: black double 2px;
+  border-radius: 100px 100px 100px 100px;
+  color: black;
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(12, 121, 12);
+  left: 40%;
+  top: 25%;
+}

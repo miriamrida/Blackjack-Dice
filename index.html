@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="Miriam Rida">
+    <title>Blackjack Dice Final Project - Miriam Rida</title>
+
+    <!--These are the links to ensure that the fonts from google fonts work-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Blackjack Dice</title>
+
+    <!--Links the HTML to the JavaScript and CSS on the different pages-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="sketch.js"></script>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  
+  </head>
+
+  <body onload = "hiddenButtons()"></body> 
+  
+  <body>
+    <!--I created all of these divs and buttons for the layout of the game and so that certain functions can be assigned to the buttons-->
+    <h1>Blackjack Dice</h1>
+    <br>
+    <br>
+    <div id="p1" class="player1">Player 1</div>
+    <div id="p2" class="player2">Player 2</div>
+    <br>
+    <br>
+    <div id="d1" class="dice">0</div>
+    <div id="d2" class="dice">0</div>
+    <div id="d3" class="dice2">0</div>
+    <div id="d4" class="dice2">0</div>
+    <div class="header"></div>
+    <div class="buttongroup">
+      <!--By using the onlick property, I am teling the code that when the players click the button, that specific function needs to be carried out-->
+      <!--I also used classes and ids so that I can easily identify the elements and so I could apply CSS-->
+      <button class="roll1" id="roll1" onclick="rollDice1()">Player 1 Click To Roll</button>
+      <button class="onedice1" id="oneDice1" onclick="oneDice1()">Roll 1 Dice</button>
+      <button class="roll2" onclick="rollDice2()">Player 2 Click To Roll</button>
+      <button class="onedice2" id="oneDice2" onclick="oneDice2()">Roll 1 Dice</button>
+      <button id="end" class="nextRound" onclick ="endRound()">Next Round</button>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+      
+    <div id="output"> <!--This is the table that automatically displays the values that the players roll-->
+    <table class="play1" id="gridoutput">
+        <tr> 
+            <th id="player1total">Player 1 Total</th>
+        </tr>
+    </table>
+</div>
+<div> 
+  <div id="output1">
+    <table class="play2" id="gridoutput2">
+      <tr>
+        <th>Player 2 Total</th>
+      </tr>
+    </table>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="score" id="score">0</div>
+<div class="score2" id="score2">0</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br> <!--The instructions/rules if the players need a quick reminder-->
+<h3><u>Rules of Blackjack Dice!</u></h3>
+<header>Blackjack Dice is the dice version of the popular card game Blackjack!</header>
+<ul>
+  <li>In each turn players will click either the "PLAYER 1 CLICK TO ROLL" or the "PLAYER 2 CLICK TO ROLL" buttons in order to start their turn. This button will roll two dice and the sum will be added to their turn total. Players can roll as many times as they wish.</li>
+  <li>Once players have scored 16 or more, they have the option of switching to rolling only one dice.</li>
+  <li>If a players score goes above 21, they have busted and the other player wins the round.</li>
+  <li>When a player wins a round, 2 points are added to their final score</li>
+  <li>The goal of the game is to score 21 or get closer to 21 than your oponent without going over.</li>
+  <li>If none of the players score 21, then the player with the closest score will get the points.</li>
+  <li>This game goes on for 10 rounds and the first player to win 10, will win the game.</li>
+</ul>
+
+</html>
+
+
+  
